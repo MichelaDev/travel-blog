@@ -2,7 +2,7 @@
 
 Welcome to CarmiaRound, a personal travel blog app built with Next.js, TypeScript, Tailwind CSS, and Sanity.io CMS.
 
-Visit the deployed project: [CarmiaRound](https://www.carmiaround.com/)
+Visit the deployed project: [Carmi Around](https://www.carmiaround.com/)
 
 ## Features
 
