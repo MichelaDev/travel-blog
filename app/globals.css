@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+button,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  user-select: none;
+}
+/**
+ * 1. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  -webkit-text-size-adjust: 100%; /* 1 */
+  font-size: 16px;
+}
+body {
+  line-height: 1;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+blockquote {
+  background: transparent;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.tiktok-embed {
+  border: none !important;
+}
+
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center py-2 md:py-4 px-8 md:px-11 rounded-full border-primary border-2 border-solid text-primary text-sm hover:bg-primary hover:text-secondary md:text-xl whitespace-nowrap;
+  }
+  .section {
+    @apply flex h-screen relative bg-primary overflow-hidden;
+  }
+}
+
+.enter-from-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease;
+}
+
+.active.enter-from-bottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeInB {
+  animation: fadeInB 0.5s forwards;
+  animation-timing-function: linear;
+}
+
+.iub__us-widget {
+  display: none !important;
+}
+
+@keyframes fadeInB {
+  from {  transform: translateY(20px); opacity: 0;}
+  to   {  transform: translateY(0); opacity: 1;}
+}
+
+.fadeInR {
+  animation: fadeInR 0.5s forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeInR {
+  from {  transform: translateX(80px); opacity: 0;}
+  to   {  transform: translateX(0); opacity: 1;}
+}
+
+.fadeInL {
+  animation: fadeInL 0.5s forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeInL {
+  from {  transform: translateX(-80px); opacity: 0;}
+  to   {  transform: translateX(0); opacity: 1;}
+}
